@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="400dp"
+    android:padding="10dp"
+    android:layout_height="150dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose"
+        android:gravity="center"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RadioButton
+            android:id="@+id/id_rb_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="show Full"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/id_rb_nprime"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="show Nprime number "
+            />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="YES"
+            android:id="@+id/id_btn_yes"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CANCEL"
+            android:id="@+id/id_btn_cancel"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

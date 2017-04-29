@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:background="@android:color/white"
+
+    >
+
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_prime_generate"
+        android:gravity="center"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/input_value"
+        android:hint="@string/hint_prime"
+        android:inputType="number"
+        />
+    <FrameLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_value"
+        android:layout_marginTop="28dp">
+        android:layout_below="@id/id_input_prime">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/generate_button"
+            android:text="@string/text_prime_generate"
+            />
+
+        <Button
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/generate_button"
+            android:id="@+id/clear_button"
+            android:text="@string/clear"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:id="@+id/list_prime"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLayout"
+        android:layout_marginTop="41dp" />
+</RelativeLayout>
+

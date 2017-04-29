@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Prime Generator</string>
+    <string name="hint_prime">Enter a value for n </string>
+    <string name="text_prime_generate">Prime Number Generator</string>
+    <string name="clear">Clear</string>
+
+</resources>
