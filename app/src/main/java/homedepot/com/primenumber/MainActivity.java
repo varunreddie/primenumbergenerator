@@ -102,8 +102,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             Integer n = Integer.parseInt(enterdValue);
             TaskUtils.generatePrimeNumbers(n);
-
-
+            
             mList = TaskUtils.primaeNumbersList;
             List<Integer> list = new ArrayList<>();
 
