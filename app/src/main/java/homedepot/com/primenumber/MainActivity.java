@@ -99,11 +99,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         try {
-            String enterdValue = mValueOfN.getText().toString().trim();
-            if (TextUtils.isEmpty(enterdValue)) {
-                mValueOfN.setText("Enter value");
-                return;
-            }
+
             Integer n = Integer.parseInt(enterdValue);
             TaskUtils.generatePrimeNumbers(n);
 
